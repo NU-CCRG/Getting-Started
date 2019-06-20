@@ -1,3 +1,12 @@
+Contents:
+
+* [Introductory Linux Scripts to get around QUEST](#introductory-linux-scripts-to-get-around-quest)
+* [Conda Environments](#conda-environments)
+* [GIT on QUEST](#git-on-quest)
+* [Jupyter Notebook](#jupyter-notebook)
+
+
+
 # Introductory Linux Scripts to get around QUEST
 
 Explanation in this font.
@@ -182,9 +191,9 @@ Names of things are in \<brackets\>, which means it can be replaced with the nam
 
 (port number can be any 4 digits, choose a random set of 4 digits)
 
-7. OPEN NEW TERMINAL WINDOW. Log into your “tunnel” to the node so you can get to Jupyter notebook.
+7. **OPEN NEW TERMINAL WINDOW**. Log into your “tunnel” to the node so you can get to Jupyter notebook.
 
- `ssh -L <8622>:localhost:<8622> i <user>@quest.northwestern.edu ssh -N -L <8622>:localhost:<8622> <qnode6026>`
+ `ssh -L <8622>:localhost:<8622> i <netid>@quest.northwestern.edu ssh -N -L <8622>:localhost:<8622> <qnode6026>`
 
 8. Go to first terminal window, copy and paste the given webpage into your internet browser (i.e. Chrome).
 

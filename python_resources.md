@@ -42,6 +42,7 @@ Xarray helps you work with netcdf-type data:
  
 **#4 – Other potentially helpful libraries**
 
-•	Statistical Analyses: [statsmodels](http://www.statsmodels.org/stable/index.html) 
+•	Statistical Analyses: [statsmodels](http://www.statsmodels.org/stable/index.html)
+
 • Machine Learning / Clustering: [Scikit-learn](https://scikit-learn.org/stable/) 
  

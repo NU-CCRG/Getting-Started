@@ -8,7 +8,7 @@ One of the real powers in python is the massive library of pre-assembled scripts
  
 Here are some more basic tutorials on how to use 3 of the most important python packages:
  
-To analyze netcdf data, you want to use the netCDF4 package for python (simply add the “import netCDF4” line at the top of the code). It is super straightforward, and all you need to know about it is found in a short few examples [here](http://aosc.umd.edu/~cmartin/python/examples/netcdf_example1.html) 
+To analyze netcdf data, you want to use the netCDF4 package for python (simply add the “import netCDF4” line at the top of the code). It is super straightforward, and all you need to know about it is found in a short few examples [here](http://aosc.umd.edu/~cmartin/python/examples/netcdf_example1.html).
  
 To plot things, you have options. See Data Viz below. 
  
@@ -19,30 +19,35 @@ Finally, to do matrix and array operations, use [Numpy](https://docs.scipy.org/d
  
 Xarray helps you work with netcdf-type data: 
 
- •	[Xarray for beginners](https://towardsdatascience.com/handling-netcdf-files-using-xarray-for-absolute-beginners-111a8ab4463f)  
+* [Xarray for beginners](https://towardsdatascience.com/handling-netcdf-files-using-xarray-for-absolute-beginners-111a8ab4463f)  
 
- •	[Xray](https://nbviewer.jupyter.org/github/nicolasfauchereau/metocean/blob/master/notebooks/xray.ipynb)
+* [Xray](https://nbviewer.jupyter.org/github/nicolasfauchereau/metocean/blob/master/notebooks/xray.ipynb)
  
 
 
 **#3 – Climate Data Viz**
  
-• [CMIP Viz](https://carpentrieslab.github.io/python-aos-lesson/02-visualisation/index.html)       
+* [CMIP Viz](https://carpentrieslab.github.io/python-aos-lesson/02-visualisation/index.html)       
 
-• [PCMDI Community Data Analysis Tool](https://uvcdat.llnl.gov/index.html)
+* [PCMDI Community Data Analysis Tool](https://uvcdat.llnl.gov/index.html)
 
-• [Map Projections](https://predictablynoisy.com/cartopy/tutorials/understanding_transform.html)  
+* [Map Projections](https://predictablynoisy.com/cartopy/tutorials/understanding_transform.html)  
 
-• [WRF-Python Plotting Examples](https://wrf-python.readthedocs.io/en/latest/plot.html) 
+* [WRF-Python Plotting Examples](https://wrf-python.readthedocs.io/en/latest/plot.html) 
 
-• [Mapping w/ cartopy](https://scitools.org.uk/cartopy/docs/v0.15/matplotlib/advanced_plotting.html) 
+* [Mapping w/ cartopy](https://scitools.org.uk/cartopy/docs/v0.15/matplotlib/advanced_plotting.html) 
 
-• [Weather/Climate Python Stack](rhttps://drclimate.wordpress.com/2016/10/04/the-weatherclimate-python-stack/)
+* [Weather/Climate Python Stack](https://drclimate.wordpress.com/2016/10/04/the-weatherclimate-python-stack/)
 
  
 **#4 – Other potentially helpful libraries**
 
-•	Statistical Analyses: [statsmodels](http://www.statsmodels.org/stable/index.html)
+* Statistical Analyses: [statsmodels](http://www.statsmodels.org/stable/index.html)
 
-• Machine Learning / Clustering: [Scikit-learn](https://scikit-learn.org/stable/) 
+* Machine Learning / Clustering: [Scikit-learn](https://scikit-learn.org/stable/) 
  
+**#5 - Some other tutorials/examples for Python**
+
+* [Python for Geosciences](https://github.com/koldunovn/python_for_geosciences)
+* [Earthpy](http://earthpy.org/)
+* [A gallery of interesting Jupyter Notebooks](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks)

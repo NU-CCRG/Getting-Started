@@ -16,6 +16,6 @@ The CMIP file is located on QUEST. The path can be found here: /projects/b1045/c
 To get a preview of the contents use the command line and type: 
 `ncdump -h <file name>`
 
-Recommended libraries: 
+**Recommended libraries:** 
 [xarray](https://towardsdatascience.com/handling-netcdf-files-using-xarray-for-absolute-beginners-111a8ab4463f), [netCDF4](https://scitools.org.uk/cartopy/docs/v0.15/matplotlib/advanced_plotting.html), [cartopy](http://earthpy.org/tag/cartopy.html), [matplotlib.pyplot](https://matplotlib.org/3.1.0/tutorials/introductory/pyplot.html), [numpy](https://docs.scipy.org/doc/numpy/user/quickstart.html), [pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html#min)
 If you are unfamiliar with these libraries, explore the hyperlinked web pages to get an understanding. You may not necessarily use every single one of these libraries.

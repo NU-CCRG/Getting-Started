@@ -2,7 +2,7 @@
 
 #1 – Python starter tips 
  
-Python Tutorial (https://docs.python.org/3/tutorial/) – to learn all the basics and some more complex stuff about object-oriented programming and whatnot.
+[Python Tutorial](https://docs.python.org/3/tutorial/) – to learn all the basics and some more complex stuff about object-oriented programming and whatnot.
  
 One of the real powers in python is the massive library of pre-assembled scripts and packages. Anyone who is getting started in using python should first understand Anaconda (https://conda.io/docs/user-guide/install/download.html). Anaconda is a package manager for python, much like macports or homebrew is for unix. Furthermore, anaconda comes pre-installed with all of the necessary packages to start tooling around with netCDF files, crunching numbers, and plotting cool stuff. If you want to just dive right in, this is a good synopsis of how to read in and plot netCDF data: http://joehamman.com/2013/10/12/plotting-netCDF-data-with-Python/
  

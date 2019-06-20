@@ -1,6 +1,6 @@
 **Resources for Python usage in the Atmospheric, Climate, and Earth System Sciences**
 
-#1 – Python starter tips 
+**#1 – Python starter tips** 
  
 [Python Tutorial](https://docs.python.org/3/tutorial/) <– to learn all the basics and some more complex stuff about object-oriented programming and whatnot.
  
@@ -15,7 +15,7 @@ To plot things, you have options. See Data Viz below.
 Finally, to do matrix and array operations, use [Numpy](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html). Numpy is VERY similar to Matlab. 
   
  
-#2 – Xarray
+**#2 – Xarray**
  
 Xarray helps you work with netcdf-type data: 
 
@@ -25,7 +25,7 @@ Xarray helps you work with netcdf-type data:
  
 
 
-#3 – Climate Data Viz
+**#3 – Climate Data Viz**
  
 •	[CMIP Viz](https://carpentrieslab.github.io/python-aos-lesson/02-visualisation/index.html)       
 
@@ -40,8 +40,8 @@ Xarray helps you work with netcdf-type data:
 •	[Weather/Climate Python Stack](rhttps://drclimate.wordpress.com/2016/10/04/the-weatherclimate-python-stack/)
 
  
-#4 – Other potentially helpful libraries
+**#4 – Other potentially helpful libraries**
 
 •	Statistical Analyses: [statsmodels](http://www.statsmodels.org/stable/index.html) 
-•	Machine Learning / Clustering: [Scikit-learn] (https://scikit-learn.org/stable/) 
+• Machine Learning / Clustering: [Scikit-learn](https://scikit-learn.org/stable/) 
  

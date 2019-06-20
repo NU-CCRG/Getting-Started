@@ -216,13 +216,13 @@ https://kb.northwestern.edu/running-jupyter-notebook-on-quest
 4. Check session name:
     `hostname`
 
-(remember this output, will look something like qnode6020)
+    * (remember this output, will look something like qnode6020)
 
 5. Run jupyter notebook on quest:
 
     `jupyter notebook --port=<8622> --no-browser`
 
-(port number can be any 4 digits, choose a random set of 4 digits)
+    * (port number can be any 4 digits, choose a random set of 4 digits)
 
 6. **OPEN NEW TERMINAL WINDOW**. Log into your “tunnel” to the node so you can get to Jupyter notebook.
 

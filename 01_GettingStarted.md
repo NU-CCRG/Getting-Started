@@ -155,13 +155,15 @@ https://kb.northwestern.edu/running-jupyter-notebook-on-quest
 
 * Log into quest and do the following steps.
 
-Reminder: 
+>Reminder: 
+>
+>Explanation in this font. Actual code in `THIS FONT AND COLOR`.
+>
+>Names of things are in \<brackets\>, which means it can be replaced with the name of your target, do NOT include brackets
 
-Explanation in this font. Actual code in `THIS FONT AND COLOR`.
+### Setting up Jupyter notebook for the first time 
 
-Names of things are in \<brackets\>, which means it can be replaced with the name of your target, do NOT include brackets
-
-### Setting up Jupyter notebook for the first time (if you have done this, skip to [Running Jupyter notebooks](#running-jupyter-notebook))
+(if you have done this, skip to [Running Jupyter notebook](#running-jupyter-notebook))
 
 1. Load python
 

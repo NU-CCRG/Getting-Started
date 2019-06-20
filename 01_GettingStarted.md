@@ -8,9 +8,9 @@ Names of things are in \<brackets>\, which means it can be replaced with the nam
 
 ### Log into QUEST
 
-`ssh -X <username>@quest.northwestern.edu`
+`ssh -X <netid>@quest.northwestern.edu` or `ssh -Y <netid>@quest.northwestern.edu`
 
-You need XQUARTZ (if you have a mac) to get images to display.
+You need [XQUARTZ](https://www.xquartz.org) (if you have a mac) to get images to display.
 
 ### Directories
 “Directory” – essentially the name of a folder. You use a “path” to get to the directory – i.e. a list of folders to get to your place. For example, /projects/b1045/ is the directory to our group’s “workspace”.

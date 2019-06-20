@@ -6,12 +6,6 @@
 # by Daniel Horton, Feb 2017; mod to Python: Stacy, June 2019
 # daniel.horton@northwestern.edu
 
-# References: https://towardsdatascience.com/handling-netcdf-files-using-xarray-for-absolute-beginners-111a8ab4463f #using xarray
-#             https://carpentrieslab.github.io/python-aos-lesson/02-visualisation/index.html #using xarray
-#             https://scitools.org.uk/cartopy/docs/v0.15/matplotlib/advanced_plotting.html #plotting using cartopy and using netcdf
-#             https://wrf-python.readthedocs.io/en/latest/plot.html # plotting netcdf
-#             https://predictablynoisy.com/cartopy/tutorials/understanding_transform.html #projections
-
 # Objectives: Learn how to explore netCDF files using python, learn to use python map plotting libraries, 
 #             Bonus challenge questions require manipulation of data, recommended to try and we can go over your attempts.
 # 

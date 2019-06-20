@@ -1,4 +1,4 @@
-**bold text**Resources for Python usage in the Atmospheric, Climate, and Earth System Sciences
+**Resources for Python usage in the Atmospheric, Climate, and Earth System Sciences**
 
 #1 – Python starter tips 
  

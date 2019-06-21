@@ -113,7 +113,7 @@ You need [XQUARTZ](https://www.xquartz.org) (if you have a mac) or [FastX](https
 
 # Conda Environments
 
-### Make a Conda environment
+### Making a new Conda environment
 
 1. Load in python into QUEST
 
@@ -123,7 +123,7 @@ You need [XQUARTZ](https://www.xquartz.org) (if you have a mac) or [FastX](https
 
     `conda create -n <my-env> python=3.6 anaconda`
 
-3. Load in environment. Once environment is set up, every time you log into quest put source activate <env>.
+3. Load in environment. Once environment is set up, every time you log into quest put `source activate <env>`.
 
     `source activate <my-env>`
 
@@ -135,12 +135,21 @@ You need [XQUARTZ](https://www.xquartz.org) (if you have a mac) or [FastX](https
 
     `conda install -c conda-forge netCDF4 xarray cartopy ipykernel nc-time-axis`
 
-5. Get into environment
+5. Start an active python session
+
+    `python`
+
+### Starting python in your environment
+
+1. Load in python into QUEST
 
     `module load python/anaconda3`
+
+2. Load in environment. 
+
     `source activate <my-env>`
 
-6. Start an active python session
+3. Start an active python session
 
     `python`
 

@@ -1,13 +1,13 @@
 Contents:
 
-* [Introductory Linux Scripts to get around QUEST](#introductory-linux-scripts-to-get-around-quest)
+* [Introductory Linux commands for using QUEST](#introductory-linux-commands-for-using-quest)
 * [Conda Environments](#conda-environments)
-* [GIT on QUEST](#git-on-quest)
+* [vi text editor](#vi-text-editor)
 * [Jupyter Notebook](#jupyter-notebook)
+* [GIT on QUEST](#git-on-quest)
 
 
-
-# Introductory Linux Scripts to get around QUEST
+# Introductory Linux commands for using QUEST
 
 Explanation in this font.
 
@@ -15,13 +15,13 @@ Actual code in `THIS FONT AND COLOR`.
 
 Names of things are in \<brackets>\, which means it can be replaced with the name of your target, no need to include brackets.
 
-### Log into QUEST
+### Logging into QUEST
 
 `ssh -X <netid>@quest.northwestern.edu` or `ssh -Y <netid>@quest.northwestern.edu`
 
-You need [XQUARTZ](https://www.xquartz.org) (if you have a mac) or [FastX](https://kb.northwestern.edu/quest-fastx) (if you have Windows) to get images to display.
+The -X and -Y here allow you to view images from the command line. To take advantage of this you will need to download and install [XQUARTZ](https://www.xquartz.org) (if you have a mac) or [FastX](https://kb.northwestern.edu/quest-fastx) (if you have Windows).
 
-### Directories
+### Organizational stucture on QUEST 
 “Directory” – essentially the name of a folder. You use a “path” to get to the directory – i.e. a list of folders to get to your place. For example, /projects/b1045/ is the directory to our group’s “workspace”.
 
 * Get to our project space on QUEST:

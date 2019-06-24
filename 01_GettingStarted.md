@@ -204,7 +204,7 @@ https://kb.northwestern.edu/running-jupyter-notebook-on-quest
 
 7. **OPEN NEW TERMINAL WINDOW**. Log into your “tunnel” to the node so you can get to Jupyter notebook.
 
-    `ssh -L <8622>:localhost:<8622> i <netid>@quest.northwestern.edu ssh -N -L <8622>:localhost:<8622> <qnode6026>`
+    `ssh -L <8622>:localhost:<8622> <netid>@quest.northwestern.edu ssh -N -L <8622>:localhost:<8622> <qnode6026>`
 
 8. Go to first terminal window, copy and paste the given webpage into your internet browser (i.e. Chrome).
 

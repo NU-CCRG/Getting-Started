@@ -11,16 +11,18 @@ CCRG members back up their scripts in their personal NU Box folder using a versi
 * File types will vary among users, but commonly backed up scripts include .ncl, .m. .sh, .r, and .py files
 * Be careful not to back up ESM code, as there is lots of suffix overlap 
 
-`#!/bin/sh`
+```#!/bin/sh
 
-`cd ~/Desktop/Box\ Sync/QUEST/`    
-`bkdir=`date +"%Y-%m-%d"``
-`mkdir $bkdir`
-`cd $bkdir`
+cd ~/Desktop/Box\ Sync/QUEST/    
+bkdir=`date +"%Y-%m-%d"`
 
-`rsync -e ssh -a --include='*.Rdat' --include='*.ncl' --include='*.R*' --include='*.txt' --include='*.m' --include='*.sh' --include='*/' <netid>@quest.northwestern.edu:/home/<netid>/PROJECTS/ .`
+mkdir $bkdir
 
-`# get rid of empty directories in structure`
-`find . -type d -empty -delete`
+cd $bkdir
+
+rsync -e ssh -a --include='*.Rdat' --include='*.ncl' --include='*.R*' --include='*.txt' --include='*.m' --include='*.sh' --include='*/' <netid>@quest.northwestern.edu:/home/<netid>/PROJECTS/ .
+
+# get rid of empty directories in structure
+find . -type d -empty -delete```
 
 

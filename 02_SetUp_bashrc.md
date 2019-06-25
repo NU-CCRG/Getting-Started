@@ -8,9 +8,9 @@ To use software on QUEST, we take advantage of the [module libraries](https://kb
 * To load new software" `module load <software_name>`
 * To remove software from your environment: `module unload <software_name>`
 
-Many software packages on QUEST have different versions. You can either load the default verison (D) by typing in the base name of a software packge, or load a specific version by typings its full name. `module load matlab` vs. `module load matlab/2013b`
+Many software packages on QUEST have different versions. You can either load the default verison (D) by typing in the base name of a software package, or load a specific version by typing its full name. `module load matlab` vs. `module load matlab/2013b`
 
-During active QUEST sessions, you can load and unload software as needed. However, there will likley be bits of software that you use repeatedly. These can be autoloaded upon login, if you set up your .bashrc environmnet to do so. 
+During active QUEST sessions, you can load and unload software as needed. However, there will likely be bits of software that you use repeatedly. These can be autoloaded upon login, if you set up your .bashrc environmnet to do so. 
 
 On QUEST, your "environment" is determined by the .bashrc file in your home directory. Files that begin with a period "." are hidden. To see them use the following command: `ls -a`
 
@@ -21,6 +21,10 @@ In my environment I autoload the software I use on a regular basis, as well as s
 
 
 Below you'll see a .bashrc that loads [NCO](http://nco.sourceforge.net), [NCVIEW](http://meteora.ucsd.edu/~pierce/ncview_home_page.html), [NCL](https://www.ncl.ucar.edu), and [Netdcf](https://www.unidata.ucar.edu/software/netcdf/docs/). The `module use` command indicates that some software is not available to all QUEST users, but is instead only on the b1045 project space. 
+
+
+To modify your .bashrc file, you can use `vi`---see how to use vi [here](https://github.com/NU-CCRG/Getting-Started/blob/master/01_Using%20QUEST.md#vi-text-editor)
+
 
 ```
 # .bashrc

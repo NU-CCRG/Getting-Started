@@ -1,6 +1,7 @@
 Contents:
 
 * [Introduction to QUEST use](#introduction-to-quest-use)
+* [.bashrc environment set up](https://github.com/NU-CCRG/Getting-Started/blob/master/02_SetUp_bashrc.md)
 * [vi text editor](#vi-text-editor)
 * [Conda Environments](#conda-environments)
 * [Jupyter Notebook](Jupyter_Use_Guide/01_jupyter_setup.md)

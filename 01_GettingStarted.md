@@ -95,7 +95,7 @@ There's loads more HPC commands. Google away!
 
 # vi text editor
 
-vi is a bit like a word processing program. With vi you can open pre-existing text files to read and/or modify, or you can create a new <filename.xx>. vi is a language unto itself, and it will require some effort to familiarize yourself with its key strokes. A graphic of shortcuts can be found [here](http://www.viemu.com/vi-vim-cheat-sheet.gif). If you have desk space, it would be good to pringt that cheat sheet out to place above your work station. However, here's so basics:  
+vi is a bit like a word processing program. With vi you can open pre-existing text files to read and/or modify, or you can create a new <filename.xx>. vi is a language unto itself, and it will require some effort to familiarize yourself with its key strokes. A graphic of shortcuts can be found [here](http://www.viemu.com/vi-vim-cheat-sheet.gif). If you have desk space, it would be good to print that cheat sheet out to place above your work station. However, here's so basics:  
 
 * Open a pre-exiting or new file:
  

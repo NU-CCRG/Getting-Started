@@ -36,7 +36,6 @@ module load ncview
 module load ncl/6.4.0
 module load netCDF/4.3.3.1
 
-
 ```
 
 This is just the beginning of .bashrc modification. You can learn additional features [here](http://www.linuxfromscratch.org/blfs/view/7.8/postlfs/profile.html). 

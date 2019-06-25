@@ -64,6 +64,8 @@ In general, we store intellectual creations (scripts we create) in our home dire
 
 * See your command history:
     `history`
+    
+* To autocomplete names of files...begin typing them and then strike the 'Tab' key
 
 * hit **ctrl-c** to cancel your accidental runs
 

@@ -1,13 +1,13 @@
 Contents:
 
-* [Introductory Linux commands for using QUEST](#introductory-linux-commands-for-using-quest)
+* [Introduction to QUEST use](#introduction-to-quest-use)
 * [Conda Environments](#conda-environments)
 * [vi text editor](#vi-text-editor)
 * [Jupyter Notebook](#jupyter-notebook)
 * [GIT on QUEST](#git-on-quest)
 
 
-# Introductory Linux commands for using QUEST
+# Introduction to QUEST use
 
 Explanation in this font.
 
@@ -15,34 +15,38 @@ Actual code in `THIS FONT AND COLOR`.
 
 Names of things are in \<brackets>\, which means it can be replaced with the name of your target, no need to include brackets.
 
+QUEST is Northwestern's High Perfomance Computing (HPC) cluster. This is where the CCRG runs all its simulations and analyzes data. You can read all about QUEST [here](https://www.it.northwestern.edu/research/user-services/quest/). 
+
 ### Logging into QUEST
 
 `ssh -X <netid>@quest.northwestern.edu` or `ssh -Y <netid>@quest.northwestern.edu`
 
-The -X and -Y here allow you to view images from the command line. To take advantage of this you will need to download and install [XQUARTZ](https://www.xquartz.org) (if you have a mac) or [FastX](https://kb.northwestern.edu/quest-fastx) (if you have Windows).
+The -X and -Y here in the above commands allow you to view image files (e.g., .pdf, .eps, netcdf, etc.) from the command line. To take advantage of this you will need to download and install [XQUARTZ](https://www.xquartz.org) (if you have a mac) or [FastX](https://kb.northwestern.edu/quest-fastx) (if you have Windows). After downloading and installing these files, you will need to begin a new session on QUEST to enable viewing capabilities. 
 
-### Organizational stucture on QUEST 
-“Directory” – essentially the name of a folder. You use a “path” to get to the directory – i.e. a list of folders to get to your place. For example, /projects/b1045/ is the directory to our group’s “workspace”.
-
-* Get to our project space on QUEST:
-
-    `cd /projects/b1045/`
-
-* Get to your home directory (your “desktop”):
-
-    `cd ~`
+### Organizational structure on QUEST 
+QUEST (and other HPC) machines organize their files within "directories," which are essentially folders. You can navigate to folders or particular files in directories using the "path" aka address. For example, /projects/b1045/ is the path to the CCRG “storage space”, while /home/<netid>/ is your home directory.
 
 * Find your current directory:
 
     `pwd`
+    
+* Get to your home directory (your “desktop”):
 
-* Get to last directory
+    `cd ~`
+    
+* Get to the CCRG project space:
+
+    `cd /projects/b1045/`
+
+* Go to last visited directory
 
     `cd -`
 
-### Lists
+In general, we store intellectual creations (scripts we create) in our home directories and data in the b1045 project space. Home directory content should be backed up to your NU BOX folder. A script to do so can be found [here]().  
 
-* list the contents of the directory (see all the files within the folder):
+### Helpful commands on HPCs
+
+* list the contents of the directory you are in (see all the files within the folder):
 
     `ls` 
 
@@ -50,29 +54,7 @@ The -X and -Y here allow you to view images from the command line. To take advan
 
     `ls -ltr`
  
-### Open files
-
-* Open the file:
- 
-    `vi <filename>`
-
-* to exit vi – :
-
-    `:q!` (if you dont want to add changes,) 
-
-    `:wq` (if you want to write a new file)
-
-    `:q` (if you just opened the file and did nothing)
-
-* to modify the file:
-
-    `i` 
-
-* to get out of writing: hit **Esc** button
-
-**Note: vi also has tricks, like searching for keywords or line numbers, so look that up!**
-
-* Running file to make executable:
+* Make a file executable (able to be run):
 
 `chmod +x <name>.py`
 
@@ -82,7 +64,7 @@ The -X and -Y here allow you to view images from the command line. To take advan
 
 * hit **ctrl-c** to cancel your accidental runs
 
-### Copy files
+### Copying files
 
 * Copy file from one directory to another:
 
@@ -109,9 +91,32 @@ The -X and -Y here allow you to view images from the command line. To take advan
 * untar a file
 `tar -xvf <file>`
 
+# vi text editor
+
+vi is a bit like a word processing program. With vi you can open pre-existing text files to read and/or modify, or you can create a new <filename.xx>. vi is a language unto itself, and it will require some effort to familiarize yourself with its key strokes. A graphic of shortcuts can be found [here](http://www.viemu.com/vi-vim-cheat-sheet.gif). If you have desk space, it would be good to pringt that cheat sheet out to place above your work station. However, here's so basics:  
+
+* Open a pre-exiting or new file:
+ 
+    `vi <filename>`
+
+* to modify the file, enact "insert" mode:
+
+    `i` 
+
+* to get out of a mode (e.g., insert): hit the **Esc** button
+
+* to exit vi – :
+
+    `:q!` (if you dont want to add changes,) 
+
+    `:wq` (if you want to write a new file)
+
+    `:q` (if you just opened the file and did nothing)
+
 
 
 # Conda Environments
+Conda allows us to use Python on QUEST. Below you'll find instructions on how to set it up initially, as well as subsequent ussage. 
 
 ### Making a new Conda environment
 
@@ -152,10 +157,6 @@ The -X and -Y here allow you to view images from the command line. To take advan
 3. Start an active python session
 
     `python`
-
-# GIT on QUEST
-
-To be continued ...
 
 
 # Jupyter Notebook
@@ -239,3 +240,6 @@ https://kb.northwestern.edu/running-jupyter-notebook-on-quest
 
 7. Go to first terminal window, copy and paste the given webpage into your internet browser (i.e. Chrome).
 
+# GIT on QUEST
+
+To be continued ...

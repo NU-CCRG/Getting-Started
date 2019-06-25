@@ -42,7 +42,7 @@ QUEST (and other HPC) machines organize their files within "directories," which 
 
     `cd -`
 
-In general, we store intellectual creations (scripts we create) in our home directories and data in the b1045 project space. Home directory content should be backed up to your NU BOX folder. A script to do so can be found [here]().  
+In general, we store intellectual creations (scripts we create) in our home directories and data in the b1045 project space. Home directory content should be backed up to your NU BOX folder. A script to do so can be found [here](https://github.com/NU-CCRG/python_intro/blob/master/03_BackUp_Scripts.md).  
 
 ### Helpful commands on HPCs
 

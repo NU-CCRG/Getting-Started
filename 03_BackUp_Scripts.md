@@ -4,16 +4,20 @@ In the world of HPC bad stuff happens. User error or machine failure can result 
 
 Scripts are files you create to analyze data. This includes everything that is not reproducable. I.e., this does not include ESM model code or data, or publicly available data downloads. ESM model code can be re-downloaded. Model simulations can be re-run. Model data and observations can be re-downloaded.  
 
-CCRG members back up their scripts in their personal NU Box folder using the below shell script:
+CCRG members back up their scripts in their personal NU Box folder using the below shell script. This script is run from your machine's command line, i.e., it is not run from QUEST. Here's what it does:
 
-`#!/bin/sh
+* Creates within your Box Sync folder
 
-# Create dir w/ today's date and move into it
+
+
+# Create dir w/ today's date and move into it`
 # I create this dir in my 'Box Sync' folder b/c it is auto-backed up to the web
 # I save my "intellectual" content only, i.e., just scripts I've written
 # These are usually .ncl, .m, .sh, etc files
 # I use wildcards to save these...but you need to be careful, you don't want to save an entire model's code.
 # I direct the code into an area I call Projects, where I keep most of my scripts
+
+`#!/bin/sh
 
 cd ~/Desktop/Box\ Sync/QUEST/    
 bkdir=`date +"%Y-%m-%d"`

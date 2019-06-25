@@ -4,7 +4,7 @@ In the world of HPC bad stuff happens. User error or machine failure can result 
 
 Scripts are files you create to analyze data. This includes everything that is not reproducable. I.e., this does not include ESM model code or data, or publicly available data downloads. ESM model code can be re-downloaded. Model simulations can be re-run. Model data and observations can be re-downloaded.  
 
-CCRG members back up their scripts in their personal NU Box folder using the below shell script. This script is run from your machine's command line, i.e., it is not run from QUEST. Here's what it does:
+CCRG members back up their scripts in their personal NU Box folder using a version of the below shell script. This script is run from your machine's command line, i.e., it is not run from QUEST. Here's what it does:
 
 * Witin your NU Box Sync folder it creates a new directory named after today's date (so you know when the back up occurred)
 * Saves only the files you tell it to, using wildcards(*). 

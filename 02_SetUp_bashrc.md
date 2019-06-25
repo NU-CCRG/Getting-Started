@@ -20,7 +20,7 @@ In my environment I autoload the software I use on a regular basis, as well as s
 
 
 
-Here's what a .bashrc looks that loads [NCO](http://nco.sourceforge.net), [NCVIEW](http://meteora.ucsd.edu/~pierce/ncview_home_page.html), [NCL](https://www.ncl.ucar.edu), and [Netdcf](https://www.unidata.ucar.edu/software/netcdf/docs/) resources looks like:
+Below you'll see a .bashrc that loads [NCO](http://nco.sourceforge.net), [NCVIEW](http://meteora.ucsd.edu/~pierce/ncview_home_page.html), [NCL](https://www.ncl.ucar.edu), and [Netdcf](https://www.unidata.ucar.edu/software/netcdf/docs/). The `module use` command indicates that some software is not available to all QUEST users, but is instead only on the b1045 project space. 
 
 ```
 # .bashrc

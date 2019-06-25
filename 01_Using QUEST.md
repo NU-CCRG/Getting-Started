@@ -3,7 +3,7 @@ Contents:
 * [Introduction to QUEST use](#introduction-to-quest-use)
 * [vi text editor](#vi-text-editor)
 * [Conda Environments](#conda-environments)
-* [Jupyter Notebook]()
+* [Jupyter Notebook](Jupyter_Use_Guide/01_jupyter_setup.md)
 * [GIT on QUEST](#git-on-quest)
 
 

@@ -13,8 +13,12 @@ It is recommended that you try to create this plot before consulting the answer 
 **Directory:**
 The CMIP file is located on QUEST. The path can be found here: /projects/b1045/cmip/CMIP5/NCL_Practice/tas_Amon_CESM1-WACCM_rcp85_r2i1p1_200601-209912.nc
 
-To get a preview of the contents use the command line and type: 
+To get a preview of the contents of this file you can use an NCO command. NCO is a command software that allows you to perform operations on netcdf files.  
+
+at the command line type: 
 `ncdump -h <file name>`
+
+
 
 **Recommended libraries:** 
 [xarray](https://towardsdatascience.com/handling-netcdf-files-using-xarray-for-absolute-beginners-111a8ab4463f), [netCDF4](https://scitools.org.uk/cartopy/docs/v0.15/matplotlib/advanced_plotting.html), [cartopy](http://earthpy.org/tag/cartopy.html), [matplotlib.pyplot](https://matplotlib.org/3.1.0/tutorials/introductory/pyplot.html), [numpy](https://docs.scipy.org/doc/numpy/user/quickstart.html), [pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html#min)

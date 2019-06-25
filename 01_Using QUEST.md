@@ -56,13 +56,17 @@ In general, we store intellectual creations (scripts we create) in our home dire
  
 * Make a file executable (able to be run):
 
-`chmod +x <name>.py`
+    `chmod +x <name>.py`
 
 * Run a python script:
 
-`python <name>.py`
+    `python <name>.py`
+
+* See your command history:
+    `history`
 
 * hit **ctrl-c** to cancel your accidental runs
+
 
 ### Copying files
 

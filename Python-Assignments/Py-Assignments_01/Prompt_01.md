@@ -13,11 +13,10 @@ It is recommended that you try to create this plot before consulting the answer 
 **Directory:**
 The CMIP file is located on QUEST. The path can be found here: /projects/b1045/cmip/CMIP5/NCL_Practice/tas_Amon_CESM1-WACCM_rcp85_r2i1p1_200601-209912.nc
 
-To get a preview of the contents of this file you can use an NCO command. NCO is a command software that allows you to perform operations on netcdf files.  
+To get a preview of the contents of this file you can use an NCO command. NCO is a command software that allows you to perform operations on netcdf files. To use NCO on QUEST you can invoke `module load nco` or set up your .bashrc environmnet by following the directions [here](02_SetUp_bashrc.md). 
 
-at the command line type: 
+After NCO is loaded, you can preview the file contents by typing: 
 `ncdump -h <file name>`
-
 
 
 **Recommended libraries:** 

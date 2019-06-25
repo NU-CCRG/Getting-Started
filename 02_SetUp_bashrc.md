@@ -1,4 +1,4 @@
-# Setting up your .bashrc environmnet on QUEST
+# Setting up your .bashrc environment on QUEST
 
 Your .bashrc "environment" does many things, but here we'll discuss how it determines what software is available to you. However, we must first discuss software usage on QUEST:
 

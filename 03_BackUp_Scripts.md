@@ -6,11 +6,11 @@ Scripts are files you create to analyze data. This includes everything that is n
 
 CCRG members back up their scripts in their personal NU Box folder using the below shell script:
 
-'#!/bin/sh`
+`#!/bin/sh
 
-`# Create dir w/ today's date and move into it`
-`# I create this dir in my 'Box Sync' folder b/c it is auto-backed up to the web`
-`# I save my "intellectual" content only, i.e., just scripts I've written`
+# Create dir w/ today's date and move into it
+# I create this dir in my 'Box Sync' folder b/c it is auto-backed up to the web
+# I save my "intellectual" content only, i.e., just scripts I've written
 # These are usually .ncl, .m, .sh, etc files
 # I use wildcards to save these...but you need to be careful, you don't want to save an entire model's code.
 # I direct the code into an area I call Projects, where I keep most of my scripts

@@ -21,6 +21,8 @@ https://kb.northwestern.edu/running-jupyter-notebook-on-quest
 2. Activate environment (setup one if you dont have one yet, [see here](#conda-environments)
 
     `source activate <my-env>`
+    
+    To see the list of environments you have: `conda env list` 
 
 3. Install the environment within Jupyter
 
@@ -54,9 +56,11 @@ https://kb.northwestern.edu/running-jupyter-notebook-on-quest
 
     `module load python/anaconda3`
 
-2. Activate environment (setup one if you dont have one yet, [see here](#conda-environments)
+2. Activate environment (setup one if you dont have one yet, [see here](#conda-environments) )
 
     `source activate <my-env>`
+    
+    To see the list of environments you have: `conda env list`
 
 3. Start a session:
 

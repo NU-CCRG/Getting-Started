@@ -145,11 +145,11 @@ Conda allows us to use Python on QUEST. Below you'll find instructions on how to
 
     `module load python/anaconda3`
 
-2. Create conda environment, change <>
+2. Create conda environment. You can choose any environment name you want, simply replace `<my-env>` with any name you wish.
 
     `conda create -n <my-env> python=3.6 anaconda`
 
-3. Load in environment. Once environment is set up, every time you log into quest put `source activate <env>`.
+3. Load in environment.
 
     `source activate <my-env>`
     
@@ -157,15 +157,13 @@ Conda allows us to use Python on QUEST. Below you'll find instructions on how to
 
 4. Load in libraries to your environment. Make sure you’ve activated your environment before you begin loading.
 
-    `conda install <library>`
+    `conda install -c conda-forge <library>`
 
     * For the exercises, here are the suggested libraries:
 
     `conda install -c conda-forge netCDF4 xarray cartopy ipykernel nc-time-axis`
 
-5. Start an active python session
-
-    `python`
+Now you have the conda environment setup. 
 
 ### Starting python in your environment
 
@@ -177,13 +175,18 @@ Conda allows us to use Python on QUEST. Below you'll find instructions on how to
 
     `source activate <my-env>`
 
-3. Start an active python session
+3. Start an active python session.
+
+    You can choose to have your python session within the command line, in which case just type:
 
     `python`
+    
+    Or you can use the interactive Jupyter notebook interface.
 
 # Jupyter Notebooks
 
 * Learn about jupuyter notebooks [here](https://github.com/NU-CCRG/Getting-Started/tree/master/Jupyter_Use_Guide)
+
 # GIT on QUEST
 
 To be continued ...

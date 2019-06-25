@@ -1,8 +1,8 @@
 Contents:
 
 * [Introduction to QUEST use](#introduction-to-quest-use)
-* [Conda Environments](#conda-environments)
 * [vi text editor](#vi-text-editor)
+* [Conda Environments](#conda-environments)
 * [Jupyter Notebook](#jupyter-notebook)
 * [GIT on QUEST](#git-on-quest)
 
@@ -90,6 +90,8 @@ In general, we store intellectual creations (scripts we create) in our home dire
 `gunzip <file>`
 * untar a file
 `tar -xvf <file>`
+
+There's loads more HPC commands. Google away!
 
 # vi text editor
 

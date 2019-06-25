@@ -18,7 +18,7 @@ https://kb.northwestern.edu/running-jupyter-notebook-on-quest
 
     `module load python/anaconda3`
 
-2. Activate environment (setup one if you dont have one yet, [see here](#conda-environments)
+2. Activate environment (setup one if you dont have one yet, [see here](https://github.com/NU-CCRG/Getting-Started/blob/master/01_Using%20QUEST.md#conda-environments)
 
     `source activate <my-env>`
     

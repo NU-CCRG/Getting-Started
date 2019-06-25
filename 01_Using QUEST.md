@@ -1,7 +1,7 @@
 Contents:
 
 * [Introduction to QUEST use](#introduction-to-quest-use)
-* [Connecting to QUEST outside Northwestern network] (#connecting-to-quest-outside-northwestern-network)
+* [Connecting to QUEST outside Northwestern network](#connecting-to-quest-outside-northwestern-network)
 * [.bashrc environment set up](https://github.com/NU-CCRG/Getting-Started/blob/master/02_SetUp_bashrc.md)
 * [vi text editor](#vi-text-editor)
 * [Conda Environments](#conda-environments)

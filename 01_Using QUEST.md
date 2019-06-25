@@ -102,7 +102,7 @@ There's loads more HPC commands. Google away!
 
 # .bashrc environment set up 
 
-* LEarn how to use software on QUEST [here](https://github.com/NU-CCRG/Getting-Started/blob/master/02_SetUp_bashrc.md)
+* Learn how to use software on QUEST [here](https://github.com/NU-CCRG/Getting-Started/blob/master/02_SetUp_bashrc.md)
 
 # vi text editor
 
@@ -173,7 +173,9 @@ Conda allows us to use Python on QUEST. Below you'll find instructions on how to
 
     `python`
 
+# Jupyter Notebooks
 
+* Learn about jupuyter notebooks [here](https://github.com/NU-CCRG/Getting-Started/blob/master/02_SetUp_bashrc.md)
 # GIT on QUEST
 
 To be continued ...

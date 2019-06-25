@@ -133,6 +133,8 @@ Conda allows us to use Python on QUEST. Below you'll find instructions on how to
 3. Load in environment. Once environment is set up, every time you log into quest put `source activate <env>`.
 
     `source activate <my-env>`
+    
+    To see the list of environments you have: `conda env list`
 
 4. Load in libraries to your environment. Make sure you’ve activated your environment before you begin loading.
 
@@ -152,7 +154,7 @@ Conda allows us to use Python on QUEST. Below you'll find instructions on how to
 
     `module load python/anaconda3`
 
-2. Load in environment. 
+2. Load in environment. To see the list of environments you have: `conda env list`
 
     `source activate <my-env>`
 
@@ -181,7 +183,7 @@ https://kb.northwestern.edu/running-jupyter-notebook-on-quest
 
     `module load python/anaconda3`
 
-2. Activate environment (setup one if you dont have one yet, [see here](#conda-environments)
+2. Activate environment (setup one if you dont have one yet, [see here](#conda-environments) )
 
     `source activate <my-env>`
 

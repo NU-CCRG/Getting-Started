@@ -26,6 +26,6 @@ cd $bkdir
 rsync -avze ssh --include '*.ncl' --include='*.sh' --include='*.m' --include='*/' --exclude '*' deh224@quest.northwestern.edu:/home/deh224/PROJECTS/ .
 
 # get rid of empty directories in structure
-find . -type d -empty -delete
+find . -type d -empty -delete`
 
 

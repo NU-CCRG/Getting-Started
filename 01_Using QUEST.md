@@ -175,7 +175,7 @@ Conda allows us to use Python on QUEST. Below you'll find instructions on how to
 
 # Jupyter Notebooks
 
-* Learn about jupuyter notebooks [here](https://github.com/NU-CCRG/Getting-Started/blob/master/02_SetUp_bashrc.md)
+* Learn about jupuyter notebooks [here](https://github.com/NU-CCRG/Getting-Started/tree/master/Jupyter_Use_Guide)
 # GIT on QUEST
 
 To be continued ...

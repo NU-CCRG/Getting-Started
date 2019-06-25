@@ -2,7 +2,7 @@
 
 Your .bashrc "environment" does many things, but here we'll discuss how it determines what software is available to you. However, we must first discuss software usage on QUEST:
 
-To use software on QUEST, we take advantage of the module library:
+To use software on QUEST, we take advantage of the [module libraries](https://kb.northwestern.edu/quest-software):
 * To see what software is available on QUEST: `module avail`
 * To see what software is currently loaded in your environment: `module list`
 * To load new software" `module load <software_name>`
@@ -20,7 +20,8 @@ In my environment I autoload the software I use on a regular basis, as well as s
 
 
 
-Here's what my .bashrc looks like: 
+Here's what a .bashrc looks that loads [NCO](http://nco.sourceforge.net), [NCVIEW](http://meteora.ucsd.edu/~pierce/ncview_home_page.html), [NCL](https://www.ncl.ucar.edu), and [Netdcf](https://www.unidata.ucar.edu/software/netcdf/docs/) resources looks like:
+
 ```
 # .bashrc
 
@@ -30,32 +31,10 @@ if [ -f /etc/bashrc ]; then
 fi
 
 module use /projects/b1045/modules
+module load nco
 module load ncview
 module load ncl/6.4.0
 module load netCDF/4.3.3.1
-module load nco
 
-# 
-export GREP_OPTIONS='--color=auto'
-export PS1="[\d\t]\u@W$ "
-export TMPDIR=/projects/b1045/tmp/
 
-# User specific aliases and functions
-alias rm='rm -f'
-alias cp='cp -f'
-alias mv='mv -f'
-#alias q='qstat -a'
-alias q='squeue'
-alias ll='ls -lrt'
-#alias Q='showq -w acct=b1045'
-alias Q='squeue -A b1045'
-#alias cd='set old=$cwd ; chdir \!*'
-alias back='set oldb = $cwd ; chdir $old ; set old = $oldb ; pwd'
-alias b='back'
-alias num='ls -l ./ | wc -l'
-alias ls='ls --color=force'
-#alias ll='ls -l --color=force'
-alias l.='ls -d .[a-zA-Z]* --color=force'
-alias la='ls -a --color=force'
-alias pro='cd /projects/b1045/'
-alias 343='cd /projects/e30741/'
+```

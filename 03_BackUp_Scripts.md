@@ -20,7 +20,7 @@ CCRG members back up their scripts in their personal NU Box folder using the bel
 
 `rsync -e ssh -a --include='*.Rdat' --include='*.ncl' --include='*.R*' --include='*.txt' --include='*.m' --include='*.sh' --include='*/' <netid>@quest.northwestern.edu:/home/<netid>/PROJECTS/ .`
 
-# get rid of empty directories in structure
+`# get rid of empty directories in structure`
 `find . -type d -empty -delete`
 
 

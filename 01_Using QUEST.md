@@ -1,6 +1,7 @@
 Contents:
 
 * [Introduction to QUEST use](#introduction-to-quest-use)
+* [Connecting to QUEST outside Northwestern network] (#connecting-to-quest-outside-northwestern-network)
 * [.bashrc environment set up](https://github.com/NU-CCRG/Getting-Started/blob/master/02_SetUp_bashrc.md)
 * [vi text editor](#vi-text-editor)
 * [Conda Environments](#conda-environments)
@@ -99,6 +100,13 @@ In general, we store intellectual creations (scripts we create) in our home dire
 `tar -xvf <file>`
 
 There's loads more HPC commands. Google away!
+
+# Connecting to QUEST outside Northwestern network
+
+If you are connecting to QUEST from outside the Nortwestern Network, you might need to setup a VPN connection. Northwestern Knowledgebase has a good step-by-step [tutorial](https://www.it.northwestern.edu/oncampus/vpn/) on this:
+
+* [Setting up VPN on a Windows computer](https://kb.northwestern.edu/62248)
+* [Setting up VPN on a macOS computer](https://kb.northwestern.edu/62249)
 
 # .bashrc environment set up 
 

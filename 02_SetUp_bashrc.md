@@ -20,7 +20,7 @@ In my environment I autoload the software I use on a regular basis, as well as s
 
 
 
-Below you'll see a .bashrc that loads [NCO](http://nco.sourceforge.net), [NCVIEW](http://meteora.ucsd.edu/~pierce/ncview_home_page.html), [NCL](https://www.ncl.ucar.edu), and [Netdcf](https://www.unidata.ucar.edu/software/netcdf/docs/). The `module use` command indicates that some software is not available to all QUEST users, but is instead only on the b1045 project space. 
+Below you'll see a .bashrc that loads [NCO](http://nco.sourceforge.net), [NCVIEW](http://meteora.ucsd.edu/~pierce/ncview_home_page.html), [NCL](https://www.ncl.ucar.edu), and [Netdcf](https://www.unidata.ucar.edu/software/netcdf/docs/) libraries. The `module use` command indicates that some software is not available to all QUEST users, but is instead only on the b1045 project space. 
 
 
 To modify your .bashrc file, you can use `vi`---see how to use vi [here](https://github.com/NU-CCRG/Getting-Started/blob/master/01_Using%20QUEST.md#vi-text-editor)

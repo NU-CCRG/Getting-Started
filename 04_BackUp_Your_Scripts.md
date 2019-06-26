@@ -9,9 +9,10 @@ CCRG members back up their scripts in their personal NU Box folder using a versi
 * Within your NU Box Sync folder it creates a new directory named after today's date (so you know when the back up occurred)
 * Saves only the files you tell it to, using wildcards(*). 
 * File types will vary among users, but commonly backed up scripts include .ncl, .m. .sh, .r, and .py files
-* Be careful not to back up ESM code, as there is lots of suffix overlap 
+* Be careful not to back up large code repositories like ESM code, as there is lots of suffix overlap 
+  * To prevent this, use a well thought out PATH structure in the shell script
 
-To create a back up shell script on your machine, open a <filename.sh> using **vi** and enter your desired commands. Once the .bashrc is complete, make your script executable using `chmod +x <filename>.sh` and then execute. Depending on the number of files you need to save, it may take some time. 
+To create a back up shell script on your machine, open a <filename.sh> using **vi** and enter your desired commands. Once the .bashrc is complete, make your script executable using `chmod +x <filename>.sh` and then execute `./<filename>.sh` Depending on the number of files you need to save, it may take some time. 
 
 ```
 #!/bin/sh

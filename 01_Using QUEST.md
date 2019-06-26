@@ -6,7 +6,7 @@ Contents:
 * [vi text editor](#vi-text-editor)
 * [Conda Environments](#conda-environments)
 * [Jupyter Notebook](Jupyter_Use_Guide/01_jupyter_setup.md)
-* [Transfering Files to/from QUEST](#file-transfer)
+* [Transfering Files to/from QUEST](#transfer-files)
 * [GIT on QUEST](#git-on-quest)
 
 

@@ -75,7 +75,7 @@ https://kb.northwestern.edu/running-jupyter-notebook-on-quest
 
     `jupyter notebook --port=<8622> --no-browser`
 
-    * (port number can be any 4 digits, choose a random set of 4 digits)
+    * (port number can be any 5 digits from 00000 to 65535. If the port is already in use, try another set of digits.)
 
 6. **OPEN NEW TERMINAL WINDOW**. Log into your “tunnel” to the node so you can get to Jupyter notebook.
 

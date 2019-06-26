@@ -6,6 +6,7 @@ Contents:
 * [vi text editor](#vi-text-editor)
 * [Conda Environments](#conda-environments)
 * [Jupyter Notebook](Jupyter_Use_Guide/01_jupyter_setup.md)
+* [Transfering Files to/from QUEST](#file-transfer)
 * [GIT on QUEST](#git-on-quest)
 
 
@@ -190,6 +191,10 @@ Now you have the conda environment setup.
 # Jupyter Notebooks
 
 * Learn about jupuyter notebooks [here](https://github.com/NU-CCRG/Getting-Started/tree/master/Jupyter_Use_Guide)
+
+# Tranfer Files
+
+* Moving files onto and off of QUEST can be done in a myriad of ways that you can read about [here](https://kb.northwestern.edu/quest-filetransfer). We reccommend downloading [Cyber Duck](https://cyberduck.io) as its "window-based" interface is likely to be familiar. 
 
 # GIT on QUEST
 

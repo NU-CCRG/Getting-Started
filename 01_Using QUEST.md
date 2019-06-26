@@ -192,7 +192,7 @@ Now you have the conda environment setup.
 
 * Learn about jupuyter notebooks [here](https://github.com/NU-CCRG/Getting-Started/tree/master/Jupyter_Use_Guide)
 
-# Tranfer Files
+# Transfer Files
 
 * Moving files onto and off of QUEST can be done in a myriad of ways that you can read about [here](https://kb.northwestern.edu/quest-filetransfer). We reccommend downloading [Cyber Duck](https://cyberduck.io) as its "window-based" interface is likely to be familiar. 
 

@@ -12,7 +12,7 @@ CCRG members back up their scripts in their personal NU Box folder using a versi
 * Be careful not to back up large code repositories like ESM code, as there is lots of suffix overlap 
   * To prevent this, use a well thought out PATH structure in the shell script
 
-To create a back up shell script on your machine, open a <filename.sh> using **vi** and enter your desired commands. Once the .bashrc is complete, make your script executable using `chmod +x <filename>.sh` and then execute from the command line `./<filename>.sh`. Depending on the number of files you need to save, it may take some time. 
+To create a back up shell script on your machine, open a <filename.sh> using **vi** and enter your desired commands. See how to use vi [here](https://github.com/NU-CCRG/Getting-Started/blob/master/01_Using%20QUEST.md#vi-text-editor). Once the .bashrc is complete, make your script executable using `chmod +x <filename>.sh` and then execute from the command line `./<filename>.sh`. Depending on the number of files you need to save, it may take some time. 
 
 ```
 #!/bin/sh

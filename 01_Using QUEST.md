@@ -28,7 +28,7 @@ The -X and -Y here in the above commands allow you to view image files (e.g., .p
 
 ### Logging into a QUEST Node to conduct analysis
 
-When you ssh onto QUEST, you are placed on the head node. The head node is not designed for conducting analyses. To move to an analysis node invoke the following command:
+When you ssh onto QUEST, you are placed on the head node. The head node is not designed for conducting analyses, e.g., runnig python, jupyter, R, or NCL code. To move to an analysis node invoke the following command:
 
 `srun -A b1045 -p b1045 -N 1 --tasks-per-node=1 --mem-per-cpu=4G --time=04:00:00 --pty bash -l`
 

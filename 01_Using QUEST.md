@@ -138,7 +138,7 @@ vi is a bit like a word processing program. With vi you can open pre-existing te
 
 
 # Conda Environments
-Conda allows us to use Python on QUEST. Below you'll find instructions on how to set it up initially, as well as subsequent ussage. 
+Conda allows us to use Python on QUEST. Below you'll find instructions on how to set it up initially, as well as subsequent usage. 
 
 ### Making a new Conda environment
 

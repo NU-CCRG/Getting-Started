@@ -26,6 +26,12 @@ QUEST is Northwestern's High Perfomance Computing (HPC) cluster. This is where t
 
 The -X and -Y here in the above commands allow you to view image files (e.g., .pdf, .eps, netcdf, etc.) from the command line. To take advantage of this you will need to download and install [XQUARTZ](https://www.xquartz.org) (if you have a mac) or [FastX](https://kb.northwestern.edu/quest-fastx) (if you have Windows). After downloading and installing these files, you will need to begin a new session on QUEST to enable viewing capabilities. 
 
+### Logging into a QUEST Node to conduct analysis
+
+When you ssh onto QUEST, you are placed on the head node. The head node is not designed for conducting analyses. To move to an analysis node invoke the following command:
+
+`srun -A b1045 -p b1045 -N 1 --tasks-per-node=1 --mem-per-cpu=4G --time=04:00:00 --pty bash -l`
+
 ### Organizational structure on QUEST 
 QUEST (and other HPC) machines organize their files within "directories," which are essentially folders. You can navigate to folders or particular files in directories using the "path" aka address. For example, /projects/b1045/ is the path to the CCRG “storage space”, while /home/<netid>/ is your home directory.
 
@@ -134,7 +140,6 @@ vi is a bit like a word processing program. With vi you can open pre-existing te
     `:wq` (if you want to write a new file)
 
     `:q` (if you just opened the file and did nothing)
-
 
 
 # Conda Environments

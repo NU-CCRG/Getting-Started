@@ -4,7 +4,7 @@
 For this assignment, you will continue to use the WACCM data from Assignments 1 & 2, but you will now learn how to parse it by seasons, a common need in climate studies. 
 
 **Task:**
-Your assignment is to (1) create a 2006-2099 annual average global Plate Carree projection map plot, (2) create a time series line plot of annual average global temperature weighted by latitude, (3) create a time series line plot of global average temperature anomalies weighted by latitude with a baseline of 2006-2035, and (4) repeat steps 2 and 3 for each season (Spring: March-April-May, Summer: June-July-August, Autumn: Sept-Oct-Nov, Winter: Dec-Jab-Feb) with each season in a subplot.
+Your assignment is to (1) create a 2006-2099 annual average global Mollweide map plot, (2) create a time series line plot of annual average global temperature weighted by latitude, (3) create a time series line plot of global average temperature anomalies weighted by latitude with a baseline of 2006-2035, and (4) repeat steps 2 and 3 for each season (Spring: March-April-May, Summer: June-July-August, Autumn: Sept-Oct-Nov, Winter: Dec-Jab-Feb) with each season in a subplot.
 
 It is recommended that you try to create this plot before checking the answer script.
 

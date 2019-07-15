@@ -6,7 +6,7 @@ Notes by Irene
 
 Use the WACCM netCDF file to
 
-(1) create a 2006-2099 annual average global Mollweide map plot, 
+(1) create a 2006-2099 annual average global Plate Carree projection map plot, 
 
 (2) create a time series line plot of annual average global temperature weighted by latitude, 
 

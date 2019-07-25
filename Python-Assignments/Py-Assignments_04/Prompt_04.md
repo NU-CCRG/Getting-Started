@@ -1,4 +1,4 @@
-In this assignment we will explore the Array of Things dataset. In particular, we will explore the pre-processed reduced dataset in the folder `/projects/b1045/AoT/AoT_reduced_data_10m`
+In this assignment we will explore the Array of Things (AoT) dataset. In particular, we will explore the pre-processed reduced dataset in the folder `/projects/b1045/AoT/AoT_reduced_data_10m`
 
 To help us explore the dataset, and learn `pandas` and a little bit of `cartopy` while exploring, let's try to answer the following questions.
 

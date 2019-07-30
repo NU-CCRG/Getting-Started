@@ -28,7 +28,7 @@ Create a 2-panel figure. (a) A map of CONUS with a star over Chicago, as to conf
 
 The WRF file is located on QUEST. The path can be found here: `/projects/b1045/wrf-cmaq/output/Chicago_LADCO/Practice/`
 
-**Recommended libraries: **
+**Recommended libraries:**
 
 `xarray, netCDF4, cartopy,matplotlib.pyplot , numpy, pandas`
 

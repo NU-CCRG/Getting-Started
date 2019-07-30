@@ -7,6 +7,7 @@ For this assignment, you will use the Weather Research Forecast Model output and
 **Task**
 
 *Part 1: Pull NOAA station data*
+
 NOAA data is stored online, with each station saved as a CSV on a webpage. We have included a function that downloads the NOAA data from known, active climate stations over this time period and returns observations at hourly measurements on UTC time. Read through this function [def getRealData(LCD, dates, LCDvariables)] and understand how it operates. Guiding questions: what is the output of this function? What kind of format is the output? How would you use this output in order to compare it to the gridded WRF data? 
 
 *Part 2: Overlay NOAA station data*

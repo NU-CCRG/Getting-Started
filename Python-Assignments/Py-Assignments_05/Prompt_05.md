@@ -27,7 +27,7 @@ The WRF file is located on QUEST. The path can be found here: `/projects/b1045/w
 
 **Recommended libraries:**
 
-`xarray, netCDF4, cartopy,matplotlib.pyplot , numpy, pandas`
+`xarray, netCDF4, cartopy,matplotlib.pyplot , numpy, pandas`, wrf
 
 **NECESSARY libraries for functions:**
 

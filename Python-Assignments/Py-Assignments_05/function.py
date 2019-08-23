@@ -223,6 +223,7 @@ dates=[filenames_d01[z].split("wrfout_d01_")[1].split("_00:00:00")[0] for z in r
 
 # ----------------------------------------------------------------
 # STARTING ANSWER --- NEW ADDITION 08/23
+# This part basically addresses part 1
 # ----------------------------------------------------------------
 
 # Extra libraries to process WRF
@@ -250,8 +251,9 @@ for station in range(len(stationList)):
    temp_real[station]=correctedLCDVar_noRepeats[0]
    Time_real[station]=timeCorrected_noRepeats; Date_real[station]=dateCorrected_noRepeats
    
+   
 # Set up data frame to write out, that way you don't have to repeat this every time
-# The format is now columns = hours, stations = rows
+# The answer to part 1: The format is now columns = hours, stations = rows
 writeout_real = pd.DataFrame(temp_real)
 writeout_real['xx_d01']= xx_d01
 writeout_real['yy_d01']= yy_d01

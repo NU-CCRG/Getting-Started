@@ -105,13 +105,12 @@ def getRealData(LCD, dates, LCDvariables):
    for i in range(len(LCD[start_ind_dataset: end_ind_dataset])): # I recognize there are more intuitive loopings oops..
       datetimeLCD=dparser.parse(LCD['DATE'][start_ind_dataset+i])
       datetimeLCD_UTC = datetimeLCD + timedelta(hours=UTC_offset)
-      for zz in range(len(correctedLCDVar)):
+      # correctedLCDVar will be a variable with all the variables nested
+      for q in range(len(LCDvariables)):
          try:
-            correctedLCDVar[zz].append(float(LCD[LCDvariables[zz]][start_ind_dataset+i]))
+            correctedLCDVar[q].append(float(LCD[LCDvariables[q]][start_ind_dataset+i]))
          except ValueError:
-            correctedLCDVar[zz].append(float('nan'))
-#
-      # Round the times
+            correctedLCDVar[q].append(float('nan'))
       if datetimeLCD_UTC.minute >= 30:
             correctedTime.append((datetimeLCD_UTC+timedelta(minutes=60-datetimeLCD_UTC.minute)).isoformat().split('T')[1])
             correctedDate.append((datetimeLCD_UTC+timedelta(minutes=60-datetimeLCD_UTC.minute)).isoformat().split('T')[0])
@@ -143,15 +142,13 @@ def getRealData(LCD, dates, LCDvariables):
             # move forward in search
             j=j+1
          # If none of the variables are repeated, just put in the variables without averaging
-         if [len(tmpVar[qq]) == 0 for qq in range(len(LCDvariables))] == [True for qq in range(len(LCDvariables))]:
-            for qq in range(len(LCDvariables)):
-                correctedLCDVar_noRepeats[qq].append(correctedLCDVar[qq][i])
+         if [len(tmpVar[qqq]) == 0 for qqq in range(len(LCDvariables))] == [True for qqq in range(len(LCDvariables))]:
             for qq in range(len(LCDvariables)):
                 correctedLCDVar_noRepeats[qq].append(correctedLCDVar[qq][i])
          # If the variables are duplicated, nanmean this
          else:
             for qq in range(len(LCDvariables)):
-               correctedLCDVar_noRepeats.append(np.nanmean(tmpVar[qq]))
+               correctedLCDVar_noRepeats[qq].append(np.nanmean(tmpVar[qq]))
 #
          timeCorrected_noRepeats.append(correctedTime[i])
          dateCorrected_noRepeats.append(correctedDate[i])
@@ -184,11 +181,14 @@ def getRealData(LCD, dates, LCDvariables):
 # --- * Include this in your own main loop *
 # --- * This is given so nomenclature is consistent in the functions above *
 
-import pandas as pd
+import pandas as pd; import glob, os
 
 # ------- User input 
 # dir to data
 dir='/projects/b1045/wrf-cmaq/output/Chicago_LADCO/Practice/'
+
+#Where you want to write out your test data, make your own folder
+dirout='/projects/b1045/wrf-cmaq/output/Chicago_LADCO/Practice/Stacy/'
 
 # data with lat lon and names of NOAA stations ... this was preprocessed
 station_out_name= 'station_out_removedmissing.csv'
@@ -198,6 +198,7 @@ NOAAdataLink="https://www.ncei.noaa.gov/data/local-climatological-data/access/20
 
 # Climate variables you are interested in
 LCDvariables=['HourlyDryBulbTemperature']
+WRFvariables=['T2']
 Chatty = True # turn on print statements
 
 # Pull in station data 
@@ -206,9 +207,52 @@ station_out=pd.read_csv(dir+station_out_name)
 stn_lat= station_out['lat']; stn_lon= station_out['lon'] 
 # Pull list of station names for input to getRealData
 stationList =station_out['stn']
+
+
+# $1 Get WRF file names
+filenames_d01=[] 
+os.chdir(dir)
+for file in glob.glob("wrfout_d01_*"):
+    filenames_d01.append(file)
+
+# !!!!! VERY IMPORTANT. MUST SORT THE LIST, otherwise dates are out of order!
+filenames_d01.sort() 
+
+# Pull dates
 dates=[filenames_d01[z].split("wrfout_d01_")[1].split("_00:00:00")[0] for z in range(len(filenames_d01))]
 
 
+# STARTING ANSWER --- NEW ADDITION
 
+# Extra libraries to process WRF
+from netCDF4 import Dataset
+from wrf import (to_np, getvar, smooth2d, get_cartopy, cartopy_xlim, cartopy_ylim, latlon_coords)
 
+ncfiled01 = [Dataset(filenames_d01[i]) for i in range(len(filenames_d01))]
+wrf_latd01, wrf_lond01 = latlon_coords(getvar(Dataset(dir+filenames_d01[0]),WRFvariables[0]))
+
+# Match wrf lat-lon gridcells to lat-lon of stations, return indices of where the station would be in the array
+xx_d01=[]; yy_d01=[]
+xx_d01,yy_d01=find_index(stn_lon, stn_lat, wrf_lond01, wrf_latd01)
+yy_d01=[yy_d01[t][0] for t in range(len(yy_d01))]; xx_d01=[xx_d01[t][0] for t in range(len(xx_d01))]; 
+
+# Set up empty lists to make variables that we can write out
+Date_real=[[] for t in range(len(stationList))]; Time_real=[[] for t in range(len(stationList))]
+temp_real=[[] for t in range(len(stationList))]
+
+# Go through each station and pull out data using getRealData()
+for station in range(len(stationList)):
+   LCD = pd.read_csv(NOAAdataLink + stationList[station])
+   if Chatty: print('-'*70)
+   dateCorrected_noRepeats, timeCorrected_noRepeats, correctedLCDVar_noRepeats, UTC_offset = getRealData(LCD, dates, LCDvariables)
+   # Now bring the data outside the loop -- cop out by making this not iterable through all the variables ...
+   temp_real[station]=correctedLCDVar_noRepeats[0]
+   Time_real[station]=timeCorrected_noRepeats; Date_real[station]=dateCorrected_noRepeats
+   
+# Set up data frame to write out, that way you don't have to repeat this every time
+# The format is now columns = hours, stations = rows
+writeout_real = pd.DataFrame(temp_real)
+writeout_real['xx_d01']= xx_d01
+writeout_real['yy_d01']= yy_d01
+writeout_real.to_csv(dirout+'T2.csv')
 

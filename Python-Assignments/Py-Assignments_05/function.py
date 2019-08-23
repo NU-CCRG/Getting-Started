@@ -67,10 +67,11 @@ def offset(lat,lon):
 #  INPUTS: 
 #  LCD = pd.read_csv(NOAAdataLink + stationList[i]), with i corresponding to one station from the list of station names given in the station_out file
 #  dates = dates over the modeling period you want to compare to. Assumes isoformat naming scheme, which is default WRF output filename.
-#  LCDvariables = the header names of the variables from the NOAA LCD file
+#  LCDvariables = the header names of the variables from the NOAA LCD file.
+#  stationList[station] = the station CSV name for a print out function at the end
 #  ----------------------------------------------------
 
-def getRealData(LCD, dates, LCDvariables):
+def getRealData(LCD, dates, LCDvariables,stationList[station]):
    # import necessary libraries into temp memory...
    import time; import pandas as pd; import numpy as np; import dateutil.parser as dparser
    from datetime import datetime,date, timedelta
@@ -246,7 +247,7 @@ temp_real=[[] for t in range(len(stationList))]
 for station in range(len(stationList)):
    LCD = pd.read_csv(NOAAdataLink + stationList[station])
    if Chatty: print('-'*70)
-   dateCorrected_noRepeats, timeCorrected_noRepeats, correctedLCDVar_noRepeats, UTC_offset = getRealData(LCD, dates, LCDvariables)
+   dateCorrected_noRepeats, timeCorrected_noRepeats, correctedLCDVar_noRepeats, UTC_offset = getRealData(LCD, dates, LCDvariables,stationList[station])
    # Now bring the data outside the loop -- cop out by making this not iterable through all the variables ...
    temp_real[station]=correctedLCDVar_noRepeats[0]
    Time_real[station]=timeCorrected_noRepeats; Date_real[station]=dateCorrected_noRepeats

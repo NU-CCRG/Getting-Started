@@ -221,8 +221,9 @@ filenames_d01.sort()
 # Pull dates
 dates=[filenames_d01[z].split("wrfout_d01_")[1].split("_00:00:00")[0] for z in range(len(filenames_d01))]
 
-
-# STARTING ANSWER --- NEW ADDITION
+# ----------------------------------------------------------------
+# STARTING ANSWER --- NEW ADDITION 08/23
+# ----------------------------------------------------------------
 
 # Extra libraries to process WRF
 from netCDF4 import Dataset

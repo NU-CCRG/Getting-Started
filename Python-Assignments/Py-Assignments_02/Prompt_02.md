@@ -6,9 +6,7 @@ For this assignment, you are tasked with creating two linear Python plots of 4D 
 **Task:**
 Your assignment is to use the WACCM netCDF file to (1) create a time series plot of latitude-weighted global average monthly temperatures from 2006-2099 (note 1) and (2) create a time series plot of latitude-weighted global average annual temperature anomalies from 2006-2099. Use 2006-2035 as your baseline.
 
-(note 1) Calculate the weights according to latitude. There are multiple ways to do this (see here). In this example, we use the cosine of latitudes.
-rad  = 4.*math.atan(1.)/180.
-weights   = np.cos(lat*rad)
+(note 1) Calculate the weights according to latitude. There are multiple ways to do this (see https://www.ncl.ucar.edu/Document/Functions/Built-in/wgt_areaave.shtml). In this example, we use the cosine of latitudes. (ex: rad  = 4.*math.atan(1.)/180. weights   = np.cos(lat*rad))
 
 Bonus challenge #1: Use subplot functionality to put both of these plots in the same figure. 
 

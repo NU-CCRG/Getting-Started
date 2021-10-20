@@ -1,6 +1,6 @@
 ## In this overview, we have pulled useful commandline programs and NCO operators that can manipulate netCDF files super quickly.
 
-In these examples, <netcdffile> takes place of the name of a netCDF file, ex: COMBINE_ACONC_20190101.nc
+In these examples, `<netcdffile>` takes place of the name of a netCDF file, ex: `COMBINE_ACONC_20190101.nc`
 
 ### Get header information -- gives you variable list, dimensions, previous nco operators, etc.
 `ncdump -h <netcdffile>`

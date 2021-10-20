@@ -1,4 +1,4 @@
-#In this overview, we have pulled useful commandline programs and NCO operators that can manipulate netCDF files super quickly. This can provide you a lot of simple tools to manipulate netCDF files. 
+## In this overview, we have pulled useful commandline programs and NCO operators that can manipulate netCDF files super quickly. This can provide you a lot of simple tools to manipulate netCDF files. 
 
 ### Get header information -- gives you variable list, dimensions, previous nco operators, etc.
 ncdump -h lat_lon_CONUS4K_d02.nc

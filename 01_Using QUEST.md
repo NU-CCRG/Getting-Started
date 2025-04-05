@@ -153,7 +153,7 @@ Conda allows us to use Python on QUEST. Below you'll find instructions on how to
 
 2. Create conda environment. You can choose any environment name you want, simply replace `<my-env>` with any name you wish.
 
-    `conda create -n <my-env> python=3.6 anaconda`
+    `conda create -n <my-env> python=3.6 anaconda --yes`
     
     If you are prompted to proceed (y/n), type `y` and press Enter.
 
